@@ -1,0 +1,39 @@
+/**
+ * @author Gopikrishna Putti - Apr 10, 2017
+ * About this project: 
+ * created on: April 10, 2017 for personal use only
+ * purpose: Simple RESTful webservices  
+ * jdk1.8, jetty, jersey 
+ *
+ */
+
+Lot of examples available on internet explaining how to create a simpleREST services using 
+embedded jetty server. 
+
+But NOT a single example I found with following combination: 
+- run a jetty server in embedded mode +  
+- using POST (ton of examples with GET ) +
+- using a HTML form  + 
+- use Jersey (jax-rs implementation) 
+
+So, if you looking for such an example, look no further. Here it is:
+
+How to run:
+import this project into your eclipse. 
+If you do NOT have eclipse then do a git clone OR 
+somehow download the whole project & unzip then from terminal:
+
+cd Rest
+IF you have maven skip below command:
+java -cp ./target/dependency/*:./target/Rest-0.0.1-SNAPSHOT.jar  com.yaams.Rest.Main
+mvn clean compile package dependency:copy-dependencies
+mvn exec:java -Dexec.mainClass="com.yaams.Rest.Main"
+http://localhost:8080/web/home.html
+- add an email and submit 
+http://localhost:8080/rest/contacts/list
+
+http://localhost:8080/rest/contacts/test
+
+Note: Main2.java - this type of examples you find all over net. 
+I intend to expand this to add a nice UI (mostly using twitter bootstrap framework)  
+
