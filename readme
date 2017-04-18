@@ -16,6 +16,8 @@ But NOT a single example I found with following combination:
 - using a HTML form  + 
 - use Jersey (jax-rs implementation) 
 
+For fun, I added bootstrap forms. So 
+
 So, if you looking for such an example, look no further. Here it is:
 
 How to run:
@@ -32,6 +34,8 @@ http://localhost:8080/web/home.html
 - add an email and submit 
 http://localhost:8080/rest/contacts/list
 
+Other links
+http://localhost:8080/web/index.html
 http://localhost:8080/rest/contacts/test
 
 Note: Main2.java - this type of examples you find all over net. 
